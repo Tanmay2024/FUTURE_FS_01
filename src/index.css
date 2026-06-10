@@ -7,7 +7,24 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #0f172a;
-  color: white;
   font-family: Arial, sans-serif;
+  color: white;
+
+  background: linear-gradient(
+    180deg,
+    #020617,
+    #0f172a,
+    #1e293b
+  );
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }

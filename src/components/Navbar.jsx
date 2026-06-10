@@ -6,7 +6,7 @@ function Navbar() {
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
                 <h1 className="text-2xl font-bold text-cyan-400">
-                    Tanmay
+                    Tanmay G.
                 </h1>
 
                 <ul className="flex gap-6 text-gray-300">
@@ -14,6 +14,9 @@ function Navbar() {
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li>
+                        <a href="#achievements">Achievements</a>
+                    </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 

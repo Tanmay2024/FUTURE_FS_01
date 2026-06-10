@@ -5,28 +5,39 @@ function Projects() {
             tech: "React • Node.js • MySQL",
             status: "Completed",
             description:
-                "A smart subscription management platform to track active subscriptions, renewal dates, and monthly spending.",
+                "Smart subscription management platform to track active subscriptions, renewal dates, monthly spending, payment reminders, and subscription analytics.",
+            github: "https://github.com/Tanmay2024/Subscription-Fatigue-Tracker",
+            demo: "#",
         },
+
         {
             title: "SmartAgri AI",
             tech: "Python • TensorFlow • OpenCV",
             status: "Ongoing",
             description:
-                "AI-powered agricultural assistant for crop disease detection and smart farming recommendations.",
+                "AI-powered agricultural assistant for crop disease detection, smart farming recommendations, crop monitoring, and yield improvement.",
+            github: "https://github.com/Tanmay2024/SmartAgri-AI",
+            demo: "#",
         },
+
         {
-            title: "Student Enrollment Management System",
-            tech: "Java • Oracle • HTML",
+            title: "Student Analytics Dashboard",
+            tech: "React • Node.js • MySQL",
             status: "Completed",
             description:
-                "Web-based system for managing student enrollment with CRUD operations and Oracle database integration.",
+                "Interactive dashboard for managing student records, analyzing academic performance, visualizing data, and generating educational insights.",
+            github: "https://github.com/Tanmay2024/student-analytics-dashboard",
+            demo: "#",
         },
+
         {
-            title: "Exam Result Management System",
-            tech: "Java • Oracle • HTML",
+            title: "SaaS Billing Portal",
+            tech: "React • Node.js • MySQL",
             status: "Completed",
             description:
-                "System for managing student results with automated calculations and secure record maintenance.",
+                "Subscription billing and customer management platform with invoice tracking, payment management, usage monitoring, and analytics dashboard.",
+            github: "https://github.com/Tanmay2024/saas-billing-portal",
+            demo: "#",
         },
     ];
 
@@ -64,13 +75,30 @@ function Projects() {
                             </p>
 
                             <div className="mt-6 flex gap-4">
-                                <button className="bg-cyan-500 px-4 py-2 rounded-lg">
-                                    GitHub
+
+                                {project.github !== "#" ? (
+                                    <a
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-cyan-500 px-4 py-2 rounded-lg hover:bg-cyan-600 transition"
+                                    >
+                                        GitHub
+                                    </a>
+                                ) : (
+                                    <button
+                                        className="bg-gray-600 px-4 py-2 rounded-lg cursor-not-allowed"
+                                    >
+                                        GitHub Soon
+                                    </button>
+                                )}
+
+                                <button
+                                    className="border border-yellow-500 text-yellow-400 px-5 py-2 rounded-lg cursor-default"
+                                >
+                                    Demo Coming Soon
                                 </button>
 
-                                <button className="border border-cyan-500 px-4 py-2 rounded-lg">
-                                    Demo
-                                </button>
                             </div>
                         </div>
                     ))}
