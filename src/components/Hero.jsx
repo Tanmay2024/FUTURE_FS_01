@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.JPG";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Hero() {
